@@ -10,7 +10,7 @@ use Crypt::PBE::PBKDF1;
 
 use Exporter qw(import);
 
-our $VERSION = '0.100';
+our $VERSION = '0.101';
 
 use constant ENCRYPTION => { 'des' => 'Crypt::DES', };
 

@@ -13,7 +13,7 @@ use Digest::SHA qw(sha1);
 
 use Exporter qw(import);
 
-our $VERSION = '0.100';
+our $VERSION = '0.101';
 
 our @EXPORT = qw(
     pbkdf1

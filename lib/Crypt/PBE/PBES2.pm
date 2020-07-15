@@ -10,7 +10,7 @@ use Crypt::PBE::PBKDF2;
 
 use Exporter qw(import);
 
-our $VERSION = '0.100';
+our $VERSION = '0.101';
 
 use constant KEY_SIZE => {
     'aes-128' => 16,

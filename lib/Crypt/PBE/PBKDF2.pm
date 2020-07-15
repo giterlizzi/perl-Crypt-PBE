@@ -12,7 +12,7 @@ use Digest::SHA qw(hmac_sha1 hmac_sha224 hmac_sha256 hmac_sha384 hmac_sha512);
 
 use Exporter qw(import);
 
-our $VERSION = '0.100';
+our $VERSION = '0.101';
 
 our @EXPORT = qw(
     pbkdf2

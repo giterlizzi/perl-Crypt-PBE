@@ -7,7 +7,7 @@ use Carp;
 use Crypt::PBE::PBES1;
 use Crypt::PBE::PBES2;
 
-our $VERSION = '0.100';
+our $VERSION = '0.101';
 
 use Exporter qw(import);
 

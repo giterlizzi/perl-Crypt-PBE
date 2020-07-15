@@ -18,11 +18,12 @@ WriteMakefile(
         'Test::More' => '0',
     },
     PREREQ_PM => {
-        'Crypt::CBC'  => '0',
-        'Crypt::DES'  => '0',
-        'Digest::MD2' => '0',
-        'Digest::MD5' => '0',
-        'Digest::SHA' => '0',
+        'Crypt::CBC'          => '0',
+        'Crypt::DES'          => '0',
+        'Digest::MD2'         => '0',
+        'Digest::MD5'         => '0',
+        'Digest::SHA'         => '0',
+        'Crypt::OpenSSL::AES' => '0',
     },
     META_MERGE => {
         'meta-spec' => { version => 2 },

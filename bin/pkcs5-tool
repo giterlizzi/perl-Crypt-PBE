@@ -15,7 +15,7 @@ use English qw( -no_match_vars );
 use Crypt::PBE::PBES1;
 use Crypt::PBE::PBES2;
 
-our $VERSION = '0.100';
+our $VERSION = '0.101';
 
 sub cli_error {
     my ($error) = @_;
@@ -25,6 +25,11 @@ sub cli_error {
 }
 
 sub show_version {
+
+    require Crypt::PBE;
+    require Crypt::CBC;
+    require Crypt::DES;
+    require Crypt::OpenSSL::AES;
 
     print "
 pkcs5-tool v$VERSION
@@ -141,9 +146,6 @@ if ( $pbe_params->{scheme} eq 'pbes2' ) {
     );
 
 }
-
-use Data::Dumper;
-print Dumper $pbes;
 
 if ( $options->{encrypt} ) {
     print encode_base64 $pbes->encrypt( $options->{input} ), '';
