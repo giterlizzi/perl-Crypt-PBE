@@ -50,6 +50,12 @@ pkcs5-tool - PKCS#5 Password-Based Encryption Tools
             echo -n "secret" | pkcs5-tool --algorithm PBEWithHmacSHA1AndAES_128 --password mypassword --encrypt
             pkcs5-tool --algorithm PBEWithHmacSHA1AndAES_128 --password mypassword --encrypt < /path/of/secret
 
+        env: or file: prefix for --password and --input params:
+
+            pkcs5-tool --algorithm PBEWithHmacSHA1AndAES_128 --password env:APP_PASSWORD --input secret --encrypt > /path/data.enc
+            pkcs5-tool --algorithm PBEWithHmacSHA1AndAES_128 --password env:APP_PASSWORD --input file:/path/data.enc --decrypt
+
+
 =head1 DESCRIPTION
 
 C<pkcs5-tool> PKCS#5 Password-Based Encryption Tools
