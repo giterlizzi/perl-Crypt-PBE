@@ -25,4 +25,4 @@ To install `Crypt::PBE` distribution, run the following commands:
 
 ## Copyright
 
- - Copyright 2020 © Giuseppe Di Terlizzi
+ - Copyright 2020-2023 © Giuseppe Di Terlizzi
