@@ -35,6 +35,10 @@ pkcs5-tool - PKCS#5 Password-Based Encryption Tools
           --encrypt             Encrypt some data
           --decrypt             Decrypt some data
 
+          --format=FORMAT       input/output format (base64 or hex)
+          --base64              Base64 input/output format
+          --hex                 HEX input/output format
+
     Examples:
 
         Encrypt:
